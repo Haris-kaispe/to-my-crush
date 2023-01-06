@@ -38,24 +38,14 @@ function App() {
         Yes
       </button>
 
-      <div
-        class="scene"
-        style={{ position: "absolute", left: noButtonPosition.x, top: noButtonPosition.y }}
-        onClick={handleNoClick}
-      >
-        <div class="cube">
-          <span class="side top">Yes</span>
-          <span class="side front">No</span>
-        </div>
-      </div>
-
       {/* Display the "No" button at the position specified by noButtonPosition */}
-      {/* <button
+      <button
+        className="btn-no"
         style={{ position: "absolute", left: noButtonPosition.x, top: noButtonPosition.y }}
         onClick={handleNoClick}
       >
         No
-  </button>*/}
+      </button>
     </div>
   );
 }
